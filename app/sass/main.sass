@@ -1,0 +1,307 @@
+@import "bourbon"
+@import "../libs/bootstrap-grid/bootstrap-grid"
+@import "libs"
+@import "fonts"
+@import "../css/animate"
+@import "../libs/tinycarousel/tinycarousel"
+
+
+$default-font: "aaarghnormal", sans-serif
+$dark: #0e142d
+
+.text-center
+	text-align: center
+
+body
+	font-family: $default-font
+
+h2
+	font-size: 40px
+
+p
+	font-size: 18px
+
+nav
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 10
+	background-color: rgba(0,0,0,.3)
+
+nav ul
+	text-align: center
+	li
+		display: inline-block
+		font-size: 20px
+		margin: 20px 30px
+		/*opacity: .8*/		
+		a
+			color: #fff
+			text-shadow: 2px 4px 3px rgba(0,0,0,1)
+
+			transition: all 0.3s
+			&:hover
+				color: #adcdff
+				opacity: 1
+				text-decoration: none
+
+header
+	background: url(../img/top_fon.jpg) no-repeat
+	background-size: cover
+	border-top: 10px solid #1c2027
+	color: #FFF
+	padding-bottom: 50px
+	padding-top: 100px
+
+	h1
+		font-size: 54px
+
+	p
+		font-size: 24px
+
+.logo
+	margin: 80px auto
+
+header, section
+	padding-top: 70px
+	position: relative
+
+.section_1
+	background: url(../img/section1_fon.jpg) no-repeat
+	background-size: cover
+	color: #FFF
+	padding-bottom: 50px
+
+
+	p
+		font-size: 18px
+
+.blue
+	background-color: rgba(69, 102, 154, .7)
+	color: #FFF
+	padding: 0
+
+#colored
+	height: 600px
+	margin: 0
+
+	.col-md-6
+		height: 100%
+
+
+#about .col-md-6
+	padding: 50px
+
+.about1
+	color: #FFF
+
+.about2
+	color: $dark
+	text-align: right
+
+.half
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+
+.section_1-2
+	background: url(../img/section1_fon.jpg) no-repeat
+	background-size: cover
+	padding-bottom: 50px
+
+.section_2
+	background: url(../img/section2_fon.jpg) no-repeat
+	background-size: cover
+	color: #FFF
+	padding-bottom: 50px
+
+	h3
+		font-size: 24px
+.icon-in
+	width: 100px
+	height: 100px
+	margin: 0 auto
+.icon
+	width: 100px
+	height: auto
+
+.icon2
+	width: 100px
+	height: auto
+	margin-top: 25px
+
+.bordered-sides
+	border-left: 1px solid rgba(255, 255, 255, .5)
+	border-right: 1px solid rgba(255, 255, 255, .5)
+	margin: 50px 0
+	margin-bottom: 75px
+
+.bordered-sides2
+	border-left: 1px solid rgba(255, 255, 255, .5)
+	border-right: 1px solid rgba(255, 255, 255, .5)
+	margin: 50px 0
+	margin-top: 0
+	padding: 25px 0
+
+.bordered-bottom
+	border-bottom: 1px solid rgba(255, 255, 255, .5)
+	margin: 50px 0
+	padding-bottom: 120px
+
+.bordered-top
+	border-top: 1px solid rgba(255, 255, 255, .5)
+	padding-top: 50px
+	margin: 0 25px
+	margin-top: -75px
+
+.section_3
+	background: url(../img/section3_fon.jpg) no-repeat
+	background-size: cover
+
+	p
+		font-size: 30px
+		margin: 50px 0 100px
+
+.section_4
+	background: url(../img/section4_fon.jpg) no-repeat
+	background-size: cover
+	color: #FFF
+
+.section_5
+	background: url(../img/section5_fon.jpg) no-repeat
+	background-size: cover
+	padding-bottom: 50px
+
+	.col-md-4
+		padding: 50px
+		img
+			width: 100%
+			height: auto
+
+
+footer
+	background: url(../img/footer_fon.jpg) no-repeat
+	background-size: cover
+	color: #FFF
+	padding: 50px 0
+
+	.icon-in
+		display: inline
+		float: left
+		width: 100px
+		margin-left: 50px
+
+	.contact
+		display: inline
+		float: left
+		padding: 50px 20px
+		font-size: 18px
+		width: 200px
+		text-align: left
+
+	.text-in
+		width: 100%
+		height: 80px
+		margin-top: 100px
+		padding: 15px
+		background-color: rgba(255, 255, 255, .1)
+		font-size: 18px
+		border: 1px solid #456ba5
+		transition: all .3s
+
+		&:hover
+			background-color: rgba(255, 255, 255, .2)
+		&:active
+			border: 1px solid #6790d0
+
+	.textar-in
+		width: 100%
+		height: 160px
+		margin-top: 50px
+		padding: 15px
+		background-color: rgba(255, 255, 255, .1)
+		font-size: 18px
+		border: 1px solid #456ba5
+		transition: all .3s
+
+		&:hover
+			background-color: rgba(255, 255, 255, .2)
+		&:active
+			border: 1px solid #6790d0
+
+	.button
+		background-color: #456ba5
+		color: #FFF
+		width: 250px
+		margin: 25px auto
+		height: 75px
+		border: 1px solid #456ba5
+		display: block
+		font-size: 28px
+		transition: all .3s
+		&:hover
+			background-color: #6790d0
+
+#slider1
+	width: 800px
+	margin: 40px auto
+	text-align: center
+	height: 500px
+	.buttons
+		width: 50px
+		height: 50px
+		background-color: #456ba5
+		border-radius: 50%
+		margin: 200px 0
+		padding: 10px
+		transition: all .3s
+		&:hover
+			background-color: #6790d0
+			color: #FFF
+	.next
+		position: absolute
+		right: 355px
+		z-index: 5
+	.prev
+		position: absolute
+		left: 355px
+		z-index: 5
+	.overview li
+		border: none
+		height: 600px
+		width: 750px		
+	.viewport
+		width: 700px
+		margin: 40px auto
+		height: 500px
+		.item
+			width: 400px
+			height: 400px
+			background-color: #000
+			border: 1px solid #fff
+			border-radius: 50%
+			text-align: center
+			margin: 0 auto
+			margin-left: 200px
+			z-index: 1
+			padding: 50px
+
+			h3
+				font-size: 36px
+				background: url(../img/name_fon.png) bottom center no-repeat
+				padding-bottom: 10px
+				
+			p
+				font-size: 20px
+				line-height: 2
+.copyright
+	font-family: Arial, san-serif
+
+.section_in
+	min-height: 500px
+	padding-top: 20px
+
+@import "media"
